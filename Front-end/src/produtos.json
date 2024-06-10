@@ -1,0 +1,41 @@
+{
+    "bottles": [
+        {
+            "id": 1,
+            "title": "Bolo de Chocolate confeitado Morangos",
+            "price": 300.00,
+            "image": ["assets/bolo2.jpg"]
+        },
+        {
+            "id": 2,
+            "title": "Bolo de Chocolate confeitado Morangos (1 Fatia)",
+            "price": 40.00,
+            "image": ["assets/bolo2.jpg"]
+        },
+        {
+            "id": 3,
+            "title": "Biscoitos Amantegas com gostas de Chocolate (40 unid.)",
+            "price": 100.00,
+            "image": ["assets/entradaDoce.jpg"]
+        },
+        {
+            "id": 4,
+            "title": "Sobremesa de Creme com Frutas Vermelhas",
+            "price": 130.00,
+            "image": ["assets/sorveteFrutas.jpg"]
+        },
+        {
+            "id": 5,
+            "title": "Bolinho de Bacalhau (20 unid.)",
+            "price": 70.00,
+           "image": ["assets/entradaSalgada.jpg"]
+        },
+        {
+            "id": 6,
+            "title": "Bolinho de Bacalhau (40 unid.)",
+            "price": 135.00,
+            "image": ["assets/entradaSalgada.jpg"]
+        }
+
+    ]
+}
