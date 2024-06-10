@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*Cores Padrões do Sistema*/
+:root{
+  --color-dark1: #262626;
+  --color-rosa1: #ffcfd8;
+  --color-vinho1: #56091f;
+  --color-vermelho1: #f70000;
+  --color-verde1: #249f37;
+  --color-amarelo1: #f7d600;  
+}
+/*Fontes Padrões do Sistema*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+.container{
+  font-family: Fira-Code;
+  /* max-width: ; */
+}
+.content-ad{
+  height: 1rem;
+  background-color: var(--color-dark1);
+}
+.header{
+  background-color: var(--color-rosa1);
+  height: 9rem;
+  width: 118.45rem;
+  display: flex;
+  justify-content: center;
+ 
+
+}
+.header-content{
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo {
+  height: 100%;
 }
+.busca{
+  height: 2.8125rem;
+  width: 48.5rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  margin: 2rem 0px 0.3125rem 0px;
+  background: url('assets/icons/ICON-LUPA.svg') no-repeat right 0.625rem center;
+  background-size: 1.5rem 1.5rem;
+  background-color: var(--color-dark1);
+  color: var(--color-rosa1);
+  font-size: 1rem;
+
+}
+.icons{
+  display: Flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.localizacao{
+  font-size: 14px;
+  display: Flex;
+  align-items: center;
+  color: var(--color-vinho1);
+  img{
+    padding-right: 0.3125rem;
+  } 
+}
+
+
+
+body {
+  margin-top: 2rem;
+  background-color: var(--color-dark1); 
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 1280px; /* Largura total do carousel */
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Transição suave entre slides */
+}
+.slide {
+  min-width: 100%; /* Largura mínima de cada slide */
+}
+.slide img {
+  width: 100%; /* Imagem do slide ocupa toda a largura disponível */
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-vinho1);
+  border-radius: 25%;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+.prev {
+  left: 1rem; /* Posição à esquerda do botão anterior */
+}
+.next {
+  right: 1rem; /* Posição à direita do botão seguinte */
+}
+
+.footer {
+  margin-top: 1rem; /* Espaçamento superior do rodapé */
+  text-align: center;
+  padding: 1rem; /* Espaçamento interno do rodapé */
+  background-color: var(--color-rosa1); /* Cor de fundo do rodapé */
+}
+

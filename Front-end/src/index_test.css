@@ -1,0 +1,117 @@
+/*Cores Padrões do Sistema*/
+:root{
+  --color-dark1: #262626;
+  --color-rosa1: #ffcfd8;
+  --color-vinho1: #56091f;
+  --color-vermelho1: #f70000;
+  --color-verde1: #249f37;
+  --color-amarelo1: #f7d600;  
+}
+/*Fontes Padrões do Sistema*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+/* Estilos para o contêiner principal */
+.container {
+  max-width: 1280px;
+  margin: 0 auto; /* Centraliza o contêiner na tela */
+  padding: 20px; /* Espaçamento interno opcional */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilos para o cabeçalho */
+.header {
+  background-color: var(--color-rosa1); /* Cor de fundo do cabeçalho */
+  width: 100%; /* Largura do cabeçalho */
+  height: 150px; /* Altura do cabeçalho */
+  padding: 10px; /* Espaçamento interno do cabeçalho */
+  box-sizing: border-box;
+  position: fixed;
+  /* top:63px; */
+  left:0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content img {
+  height: 100%; /* Altura do logotipo */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.busca {
+  width: 200px; /* Largura do campo de busca */
+  padding: 8px;
+  margin-left: 10px; /* Espaçamento à esquerda do campo de busca */
+  border: 1px solid #ccc; /* Estilo da borda */
+}
+
+.localizacao {
+  display: flex;
+  align-items: center;
+}
+
+.localizacao img {
+  height: 20px; /* Altura do ícone de localização */
+  margin-right: 5px; /* Espaçamento à direita do ícone de localização */
+}
+
+/* Estilos para o corpo */
+.body {
+  margin-top: 20px; /* Espaçamento superior do corpo */
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Largura total do carousel */
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Transição suave entre slides */
+}
+
+.slide {
+  min-width: 100%; /* Largura mínima de cada slide */
+}
+
+.slide img {
+  width: 100%; /* Imagem do slide ocupa toda a largura disponível */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px; /* Posição à esquerda do botão anterior */
+}
+
+.next {
+  right: 10px; /* Posição à direita do botão seguinte */
+}
+
+/* Estilos para o rodapé */
+.footer {
+  margin-top: 20px; /* Espaçamento superior do rodapé */
+  text-align: center;
+  padding: 10px; /* Espaçamento interno do rodapé */
+  background-color: #f0f0f0; /* Cor de fundo do rodapé */
+}
