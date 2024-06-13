@@ -1,15 +1,13 @@
-import { useState } from "react";
-import produto from "../produtos.json"
+// import { useState } from "react";
+// import produto from "../produtos.json"
 import logo from "../assets/imagens/DocesVivi.svg"
 import iconUser from "../assets/icons/ICON-USER.svg"
 import iconFavoritos from "../assets/icons/ICON-FAVORITO.svg"
 import iconCesta from "../assets/icons/ICON-CESTA.svg"
 import iconLocalizacao from "../assets/icons/ICON-LOCALIZACAO.svg"
-import bannerRepo from "../assets/banner/BannerRepo.png"
-import bannerYoutube from "../assets/banner/BannerYoutube.png"
+import BannerCarousel from "../components/BannerCarousel";
 
 export default function produtos(){
-  // const [produtosList, setProdutosList] = useState(produto.bottles)
 
   return (
     <div className="container">
@@ -32,7 +30,7 @@ export default function produtos(){
         </div>
       </section>
       <body className="body">
-        <div class="carousel">
+        {/* <div class="carousel">
           <div class="slides">
             <div class="slide">
               <img src={bannerRepo} alt="Imagem 1"/>
@@ -43,7 +41,8 @@ export default function produtos(){
           </div>
           <button class="prev">❮</button>
           <button class="next">❯</button>
-      </div>
+        </div> */}
+        <BannerCarousel/>
       </body>
     <footer className="footer"> </footer>  
     </div>

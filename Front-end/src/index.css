@@ -72,28 +72,44 @@
 
 
 body {
-  margin-top: 2rem;
+  /* /* margin-top: 2rem; */
   background-color: var(--color-dark1); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  
 }
 .carousel {
-  position: relative;
+  /* /* position: relative; */
   overflow: hidden;
-  width: 1280px; /* Largura total do carousel */
+  /* width: 1280px; /*Largura total do carousel */
+  /* display: flex; */
+
+
+  max-width: 1280px; /* Ajuste conforme necessário */
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  
 }
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out; /* Transição suave entre slides */
 }
 .slide {
-  min-width: 100%; /* Largura mínima de cada slide */
+  min-width: 50%; /* Largura mínima de cada slide */
 }
 .slide img {
-  width: 100%; /* Imagem do slide ocupa toda a largura disponível */
+  width: 1280px; 
+  padding: 70px 0;
+  text-align: center;
+  
 }
 .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   background: var(--color-vinho1);
   border-radius: 25%;
