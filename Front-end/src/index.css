@@ -1,19 +1,21 @@
 /*Cores Padrões do Sistema*/
 :root{
   --color-dark1: #262626;
+  --color-dark2: #4d4c4c;
   --color-rosa1: #ffcfd8;
   --color-vinho1: #56091f;
   --color-vermelho1: #f70000;
   --color-verde1: #249f37;
-  --color-amarelo1: #f7d600;  
+  --color-amarelo1: #f7d600;
+  --color-azul1: #bcf8fa;  
 }
+
 /*Fontes Padrões do Sistema*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 .container{
   font-family: Fira-Code;
-  /* max-width: ; */
 }
 .content-ad{
   height: 1rem;
