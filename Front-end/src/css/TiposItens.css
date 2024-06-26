@@ -2,6 +2,7 @@
   --color-dark1: #262626;
   --color-dark2: #4d4c4c;
   --color-rosa1: #ffcfd8;
+  --color-rosa2: #f7aebb;
   --color-vinho1: #56091f;
   --color-vermelho1: #f70000;
   --color-verde1: #249f37;
@@ -13,10 +14,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 .AcessoRapido {
-  width: 1563px;
+  width: 1280px;
   height: 151px;
-  margin: 0 auto;
+  margin-bottom: 30px;
 
+}
+.AcessoRapido h2{
+  color: var(--color-rosa1);
+  font-family: roboto;
 }
 
 .Categorias{
@@ -25,9 +30,28 @@
 
 }
 
-.Doce img{
-  height: 80px;
-  width: 80px;
-  border-radius: 35px;
+.ClassesDoce {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+.Doce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Doce img {
+  max-width: 75px;
+  height: auto;
+}
+
+.Doce span {
+  margin-top: 10px;
+  text-align: center;
+  font-family: roboto;
 }

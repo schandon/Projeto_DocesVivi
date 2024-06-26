@@ -1,12 +1,14 @@
 import { useState } from "react";
 import "../css/Itens.css"
+import Button from "../components/Button.js"
+
 
 export default function Item(props) {
-  const [quantity, SetQuantity] = useState(1);
-  const [values, SetValues] = useState(true);
-  const product = props.produtos;
+    const [quantity, SetQuantity] = useState(1);
+    const [values, SetValues] = useState(true);
+    const product = props.produtos;   
 
-
+      // Função para subtrair o valor da quantidade de um produto
 
       // Função para subtrair o valor da quantidade de um produto
       const minus = () => {
@@ -21,12 +23,12 @@ export default function Item(props) {
       SetQuantity(quantity + 1)
   }
       // Função para comprar um produto informando o preço final
-      const buyProduct = () => {
-        if (window.confirm(`Preço final: ${Math.round((product.price * quantity) * 100) / 100}`)) {
-            alert('Produto comprado com sucesso!')
-            SetQuantity(1)
-        }
-    }
+    //   const buyProduct = () => {
+    //     if (window.confirm(`Preço final: ${Math.round((product.price * quantity) * 100) / 100}`)) {
+    //         alert('Produto comprado com sucesso!')
+    //         SetQuantity(1)
+    //     }
+    // }
     return (
       <article className="product">
         <img src={product.image} alt="imageproduct"/>
@@ -43,8 +45,8 @@ export default function Item(props) {
             </div>
         </div>
         <div className="final">
-            <button className="addBaskt" >Adicionar Cesta</button>
-            <button className="buy" onClick={buyProduct}>Comprar</button>
+            <Button className="addBaskt" placeholder='Adcionar Cesta' />
+            <Button className="buy" placeholder='Comprar'/>
         </div>
       </article>
 

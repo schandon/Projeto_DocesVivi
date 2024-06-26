@@ -13,9 +13,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-.product{
-  width: 1492px;
-  height: 140px;
-  background-color: var(--color-vinho1);
-  border-radius: 5px;
+.Button{
+  width: 250px;
+  height: 80px;
+  background-color: var(--color-rosa2);
 }

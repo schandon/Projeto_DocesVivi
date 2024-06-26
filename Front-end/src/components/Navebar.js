@@ -1,14 +1,23 @@
+import React from "react"
+import { useNavigate } from 'react-router-dom';
 import logo from "../assets/imagens/DocesVivi.svg"
 import iconUser from "../assets/icons/ICON-USER.svg"
 import iconFavoritos from "../assets/icons/ICON-FAVORITO.svg"
 import iconCesta from "../assets/icons/ICON-CESTA.svg"
 import iconLocalizacao from "../assets/icons/ICON-LOCALIZACAO.svg"
+import HomePage from "../pages/HomePage.js"
 
 export default function Navebar(){
+  const navigate = useNavigate();
+  const goToHome = () => {
+    navigate("/home");
+  }
   return (
     <section className="header">
       <div className="header-content">
-        <img src={logo} alt="Logo" />
+        <a href={HomePage}>
+          <img src={logo} onClick={goToHome} alt="Logo" />
+        </a>
         <div>
           <input type="text" className='busca' placeholder="Busque aqui seus Doces" />
           <div className="localizacao">

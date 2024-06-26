@@ -5,42 +5,48 @@
             "title": "Bolo de Chocolate confeitado Morangos",
             "price": 300.00,
             "tipo": "Bolos",
-            "image": ["assets/bolo2.jpg"]
+            "image": "assets/imagens/bolo2.jpg",
+            "favorite": true
         },
         {
             "id": 2,
             "title": "Bolo de Chocolate confeitado Morangos (1 Fatia)",
             "price": 40.00,
             "tipo": "Bolos",
-            "image": ["assets/bolo2.jpg"]
+            "image": "assets/imagens/bolo2.jpg",
+            "favorite": false
         },
         {
             "id": 3,
             "title": "Biscoitos Amantegas com gostas de Chocolate (40 unid.)",
             "price": 100.00,
             "tipo": "Entrada Doce",
-            "image": ["assets/entradaDoce.jpg"]
+            "image": "assets/imagens/entradaDoce.jpg",
+            "favorite": true
         },
         {
             "id": 4,
             "title": "Sobremesa de Creme com Frutas Vermelhas",
             "price": 130.00,
             "tipo": "Sobremesa",
-            "image": ["assets/sorveteFrutas.jpg"]
+            "image": "assets/imagens/sorveteFrutas.jpg",
+            "favorite": false
         },
         {
             "id": 5,
             "title": "Bolinho de Bacalhau (20 unid.)",
             "price": 70.00,
             "tipo": "Entradas Salgada",
-           "image": ["assets/entradaSalgada.jpg"]
+           "image": "assets/imagens/entradaSalgada.jpg",
+           "favorite": false
         },
         {
             "id": 6,
             "title": "Bolinho de Bacalhau (40 unid.)",
             "price": 135.00,
             "tipo": "Entradas Salgada",
-            "image": ["assets/entradaSalgada.jpg"]
+            "image": "assets/imagens/entradaSalgada.jpg",
+            "favorite": true
         }
 
     ]

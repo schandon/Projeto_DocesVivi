@@ -3,6 +3,7 @@
   --color-dark1: #262626;
   --color-dark2: #4d4c4c;
   --color-rosa1: #ffcfd8;
+  --color-rosa2: #f7aebb;
   --color-vinho1: #56091f;
   --color-vermelho1: #f70000;
   --color-verde1: #249f37;
@@ -17,6 +18,7 @@
 .container{
   font-family: Fira-Code;
 }
+
 .content-ad{
   height: 1rem;
   background-color: var(--color-dark1);
@@ -74,22 +76,15 @@
 
 
 body {
-  /* /* margin-top: 2rem; */
   background-color: var(--color-dark1); 
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-  
+  align-items: center;  
 }
 .carousel {
-  /* /* position: relative; */
   overflow: hidden;
-  /* width: 1280px; /*Largura total do carousel */
-  /* display: flex; */
-
-
-  max-width: 1280px; /* Ajuste conforme necessário */
+  max-width: 1280px;
   width: 100%;
   padding: 20px;
   text-align: center;
@@ -97,10 +92,10 @@ body {
 }
 .slides {
   display: flex;
-  transition: transform 0.5s ease-in-out; /* Transição suave entre slides */
+  transition: transform 0.5s ease-in-out;
 }
 .slide {
-  min-width: 50%; /* Largura mínima de cada slide */
+  min-width: 50%; 
 }
 .slide img {
   width: 1280px; 
@@ -121,16 +116,34 @@ body {
   cursor: pointer;
 }
 .prev {
-  left: 1rem; /* Posição à esquerda do botão anterior */
+  left: 1rem; 
 }
 .next {
-  right: 1rem; /* Posição à direita do botão seguinte */
+  right: 1rem; 
+}
+
+.cardapio{
+  width: 250px;
+  height: 80px;
+  margin-top: 35px;
+  border-radius: 8px;
+  background-color: var(--color-rosa1);
+  color: var(--color-vinho1);
+  font-family: roboto;
+  font-size: medium;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cardapio:hover{
+  background-color: var(--color-rosa2);
 }
 
 .footer {
-  margin-top: 1rem; /* Espaçamento superior do rodapé */
+  height: 30px;
+  margin-top: 40px; 
   text-align: center;
-  padding: 1rem; /* Espaçamento interno do rodapé */
-  background-color: var(--color-rosa1); /* Cor de fundo do rodapé */
+  background-color: var(--color-rosa1); 
 }
 
