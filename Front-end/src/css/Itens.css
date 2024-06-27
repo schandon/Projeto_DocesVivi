@@ -13,9 +13,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-.product{
-  width: 1492px;
+
+.listaproduto{
+  width: 1260px;
+  height: auto;
+  background-color: var(--color-rosa1);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.produto{
+  width: 1250px;
   height: 140px;
   background-color: var(--color-vinho1);
   border-radius: 5px;
+  display: flex;
+  flex-direction: center; 
+}
+.produto img{
+  width: 90px;
+  height: 90px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.content{
+  width: 1000px;
+}
+
+.final{
+  display: flex;
+  justify-content: column;
+  align-items: center;
+
+}
+.final .button {
+  margin-top: 5px;
 }

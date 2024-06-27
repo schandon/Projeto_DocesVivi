@@ -30,24 +30,27 @@ export default function Item(props) {
     //     }
     // }
     return (
-      <article className="product">
-        <img src={product.image} alt="imageproduct"/>
-        <div className="content">
+      <article className="listaproduto">
+        <div className="produto">
+          <img src={"../assets/imagens/bolo2.jpg"} alt="imageProduto"/>
+          <div className="content">
             <p className="name-product">{product.title}</p>
             <h3 className="price-product">
                 R$ <span>{product.price}</span>
             </h3>
             <div className="quantity">
-                <span >Quantidade:</span>
-                <button disabled={values} className="minus" onClick={minus}>-</button>
-                <span>{quantity}</span>
-                <button className="plus" onClick={plus}>+</button>
+              <span >Quantidade:</span>
+              <button disabled={values} className="minus" onClick={minus}>-</button>
+              <span>{quantity}</span>
+              <button className="plus" onClick={plus}>+</button>
             </div>
-        </div>
-        <div className="final">
+          </div>
+          <div className="final">
             <Button className="addBaskt" placeholder='Adcionar Cesta' />
             <Button className="buy" placeholder='Comprar'/>
+          </div>
         </div>
+        
       </article>
 
   );

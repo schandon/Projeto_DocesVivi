@@ -3,9 +3,9 @@
         {
             "id": 1,
             "title": "Bolo de Chocolate confeitado Morangos",
-            "price": 300.00,
+            "price": 300.10,
             "tipo": "Bolos",
-            "image": "assets/imagens/bolo2.jpg",
+            "image": [ "assets/imagens/bolo2.jpg" ],
             "favorite": true
         },
         {
@@ -13,7 +13,7 @@
             "title": "Bolo de Chocolate confeitado Morangos (1 Fatia)",
             "price": 40.00,
             "tipo": "Bolos",
-            "image": "assets/imagens/bolo2.jpg",
+            "image": "src/assets/imagens/bolo2.jpg",
             "favorite": false
         },
         {
