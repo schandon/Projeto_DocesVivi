@@ -10,7 +10,7 @@ import HomePage from "../pages/HomePage.js"
 export default function Navebar(){
   const navigate = useNavigate();
   const goToHome = () => {
-    navigate("/home");
+    navigate("/");
   }
   return (
     <section className="header">

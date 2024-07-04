@@ -22,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: roboto;
   
 }
 .produto{
@@ -31,24 +32,45 @@
   border-radius: 5px;
   display: flex;
   flex-direction: center; 
+  color: var(--color-rosa1)
 }
+
 .produto img{
   width: 90px;
   height: 90px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 
 .content{
-  width: 1000px;
+  max-width: 1000px;
+  width: 900px;
+  padding: 10px 0 10px 0;
 }
 
+.quantity .labelqtd{
+ margin-right: 5px; 
+}
+.quantity .valorqtd{
+  margin-right: 10px; 
+  margin-left: 10px;
+}
+.quantity button{
+  border-radius: 10px;
+}
 .final{
-  display: flex;
+  width: 155px;
+  display: grid;
   justify-content: column;
   align-items: center;
+  margin: 10px 0 10px 0;
+  
+}
+.final .addBaskt, .buy {
+  font-family: roboto;
+  height: 35px;
+  border-radius: 30px;
+}
 
-}
-.final .button {
-  margin-top: 5px;
-}
+
+
