@@ -12,6 +12,10 @@ export default function Navebar(){
   const goToHome = () => {
     navigate("/");
   }
+
+  const goToCesta = () => {
+    navigate("/cestaprodutos");
+  }
   return (
     <section className="header">
       <div className="header-content">
@@ -28,7 +32,7 @@ export default function Navebar(){
         <div className="icons">
           <img src={iconUser} alt='user' />
           <img src={iconFavoritos} alt='favorito' />
-          <img src={iconCesta} alt='cestaCompras' />
+          <img src={iconCesta} onClick={goToCesta} alt='cestaCompras' />
       </div>
       </div>
     </section>

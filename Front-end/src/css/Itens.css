@@ -35,7 +35,7 @@
   color: var(--color-rosa1)
 }
 
-.produto img{
+.produto .imageProduto{
   width: 90px;
   height: 90px;
   padding: 20px;
@@ -66,11 +66,24 @@
   margin: 10px 0 10px 0;
   
 }
-.final .addBaskt, .buy {
-  font-family: roboto;
+.final .addCompra, .addCesta{
   height: 35px;
-  border-radius: 30px;
+  font-family: roboto;
 }
+.addCesta, .addCompra {
+  width: 176px;
+  height: 35px;
+  background-color: var(--color-rosa1);
+  font-family: roboto;
+  font-size: medium;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-vinho1);
+  border-radius: 10px;
+}
+
 
 
 

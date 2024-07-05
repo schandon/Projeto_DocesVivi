@@ -15,10 +15,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-
-.body{
-  width: 1563px;
-  height: 1280px;
-  background-color: var(--color-rosa1);
-
+.caminho{
+  color: var(--color-rosa1);
 }

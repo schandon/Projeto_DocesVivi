@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../css/Itens.css"
 import Button from "../components/Button.js"
+import IconBasket from "../assets/icons/ICON-CESTA.svg"
 
 export default function Item(props) {
     const [quantity, SetQuantity] = useState(1);
@@ -31,9 +32,7 @@ export default function Item(props) {
     return (
       <article className="listaproduto">
         <div className="produto">
-          {/* <img src={product.image} alt="imageProduto"/> */}
-          <img src={require(`../assets/imagens/${product.image}`)} alt="imageProduto" />
-          {/* <img src={bolo2} alt={product.title} className="imageProduto" /> */}
+          <img src={require(`../assets/imagens/${product.image}`)} className="imageProduto" alt="imageProduto" />
           <div className="content">
             <p className="name-product">{product.title}</p>
             <h3 className="price-product">
@@ -47,8 +46,8 @@ export default function Item(props) {
             </div>
           </div>
           <div className="final">
-            <Button className="addBaskt" placeholder='Adcionar Cesta' />
-            <Button className="buy" onclick={buyProduct} placeholder='Comprar'/>
+            <Button className="addCesta" onclick={buyProduct} placeholder='Adcionar Cesta' icon={IconBasket} />
+            <Button className="addCompra" onclick={buyProduct} placeholder='Comprar'/>
           </div>
         </div>
         
