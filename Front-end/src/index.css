@@ -63,6 +63,12 @@
   gap: 1rem;
 }
 
+.icons .IconUser,
+.icons .IconCesta,
+.icons .IconFavoritos{
+  cursor: pointer;  
+} 
+
 .localizacao{
   font-size: 14px;
   display: Flex;

@@ -30,9 +30,9 @@ export default function Navebar(){
           </div>
         </div>
         <div className="icons">
-          <img src={iconUser} alt='user' />
-          <img src={iconFavoritos} alt='favorito' />
-          <img src={iconCesta} onClick={goToCesta} alt='cestaCompras' />
+          <img src={iconUser} className="IconUser" alt='user' />
+          <img src={iconFavoritos} className="IconFavoritos" alt='favorito' />
+          <img src={iconCesta} className="IconCesta" onClick={goToCesta} alt='cestaCompras' />
       </div>
       </div>
     </section>
