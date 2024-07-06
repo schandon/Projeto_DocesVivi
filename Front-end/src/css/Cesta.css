@@ -13,23 +13,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-
-.teste {
-  width: 176px;
-  height: 35px;
+.ProdutosCesta{
+  height: auto;
+  max-height: 800px;
+  width: 1280px;
   background-color: var(--color-rosa1);
-  font-family: roboto;
-  font-size: medium;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-vinho1);
-  border-radius: 10px;
-}
-
-.IconBasket {
-  width: 22px;
-  height: 22px;
-  margin-left: 5px;
 }
