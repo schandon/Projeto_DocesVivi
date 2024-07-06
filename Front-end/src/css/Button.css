@@ -13,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-button{
+.button{
   background-color: var(--color-rosa1);
 }
 

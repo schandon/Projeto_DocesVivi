@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../css/Itens.css"
 import Button from "../components/Button.js"
 import IconBasket from "../assets/icons/ICON-CESTA.svg"
+import Swal from "sweetalert2";
 
 export default function Item(props) {
     const [quantity, SetQuantity] = useState(1);
@@ -29,6 +30,24 @@ export default function Item(props) {
             SetQuantity(1)
         }
     }
+      const addCesta = () => {
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+          }
+        });
+        Toast.fire({
+          icon: "success",
+          title: "Produto adicionado a Cesta!"
+        });
+      }
+
     return (
       <article className="listaproduto">
         <div className="produto">
@@ -36,7 +55,7 @@ export default function Item(props) {
           <div className="content">
             <p className="name-product">{product.title}</p>
             <h3 className="price-product">
-                R$ <span>{product.price}</span>
+                R$ <span>{product.price.toFixed(2)}</span>
             </h3>
             <div className="quantity">
               <span className="labelqtd">Quantidade:</span>
@@ -46,8 +65,8 @@ export default function Item(props) {
             </div>
           </div>
           <div className="final">
-            <Button className="addCesta" onclick={buyProduct} placeholder='Adcionar Cesta' icon={IconBasket} />
-            <Button className="addCompra" onclick={buyProduct} placeholder='Comprar'/>
+            <Button className="addCesta" onclick={addCesta} placeholder='Adcionar Cesta' icon={IconBasket} />
+            <Button className="addCompra" onclick={buyProduct} placeholder='Comprar' />
           </div>
         </div>
         

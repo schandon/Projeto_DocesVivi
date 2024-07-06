@@ -55,9 +55,31 @@
   margin-right: 10px; 
   margin-left: 10px;
 }
-.quantity button{
-  border-radius: 10px;
+
+.quantity {
+  display: flex;
+  align-items: center;
 }
+
+.labelqtd, .valorqtd {
+  margin: 0 10px;
+}
+
+.minus, .plus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-rosa1);
+  width: 22px; 
+  height: 22px;
+  border-radius: 10px; 
+}
+
+.minus:disabled{
+  background-color: var(--color-dark2);  
+}
+
+
 .final{
   width: 155px;
   display: grid;

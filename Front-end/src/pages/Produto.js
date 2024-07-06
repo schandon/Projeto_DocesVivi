@@ -11,7 +11,7 @@ export default function Produto() {
     <div className="container">
       <div className="content-ad"></div>
         <Navebar/>
-      <body className="corpo">
+      <body className="body">
         <div className="caminho">
           <h5> Home {">"} Todo Cardapio</h5>
         </div>
