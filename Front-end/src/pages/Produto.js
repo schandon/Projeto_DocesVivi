@@ -17,7 +17,7 @@ export default function Produto() {
         </div>
         <div className="main-products">
           {produtoLista.map((p, index)=> (
-            <Itens key={index} produtos={p}/>
+            <Itens key={index} produtos={p} FinalizacaoCompra={false}/>
           ))}
         </div>
       </body>
