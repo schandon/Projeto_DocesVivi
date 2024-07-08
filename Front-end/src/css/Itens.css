@@ -119,7 +119,16 @@
   width: 30px;
   height: 30px;
   margin-right: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-vinho1);
+
+  .iconButton{
+    width: 30px;
+    height: 30px;
+  }
 }
+
 
 
 

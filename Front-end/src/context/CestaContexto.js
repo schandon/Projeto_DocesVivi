@@ -9,6 +9,14 @@ export const CestaProvider = ({ children }) => {
   const addItemToCesta = (item) => {
     setItensCesta((prevItems) => [...prevItems, item]);
   };
+  const removeItemFromCesta = (itemId) => {
+    setItensCesta((prevItems) => prevItems.filter(item => item.id !== itemId));
+    console.log(itemId);
+  };
+
+  const limparCesta = () =>{
+    setItensCesta([]);
+  }
 
   const updateItemQuantity = (productId, newQuantity) => {
     setCesta(cesta.map(item => 
@@ -17,7 +25,7 @@ export const CestaProvider = ({ children }) => {
   };
 
   return (
-    <CestaContexto.Provider value={{ itensCesta, addItemToCesta, updateItemQuantity }}>
+    <CestaContexto.Provider value={{ itensCesta, addItemToCesta, updateItemQuantity, removeItemFromCesta, limparCesta }}>
       {children}
     </CestaContexto.Provider>
   );

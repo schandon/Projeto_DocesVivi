@@ -9,7 +9,7 @@ import CarrinhoCompras from "../assets/icons/ICON-CARRINHO.svg";
 import Swal from "sweetalert2";
 
 export default function Cesta(){
-  const { itensCesta } = useContext(CestaContexto);
+  const { itensCesta, limparCesta } = useContext(CestaContexto);
   const navigate = useNavigate();
  
 
@@ -19,8 +19,19 @@ export default function Cesta(){
       text: "Compra finalizada com Sucesso!",
       icon: "success"
     });
+    limparCesta();
     navigate("/");
   }
+
+  const avisoCestaVazia = () => {
+    Swal.fire({
+      icon: "warning",
+      title: "Oops...",
+      text: "Cesta Vazia!",
+    }).then(() => {;
+    navigate("/produtos");
+    });
+  };
   
   return (
     <div className="container">
@@ -34,7 +45,8 @@ export default function Cesta(){
           {itensCesta.map((item, index) => (
               <Itens key={index} produtos={item} BotoesFinais={false} finalizacaoCompra={true}/>
           ))} 
-      <Button className="finalizaCompras" onclick={finalizaCompra} alt="Finalizar Compras" placeholder="Finaliza Compras" icon={CarrinhoCompras} />   
+      { itensCesta.length === 0 && avisoCestaVazia()}
+      { itensCesta.length > 0 && <Button className="finalizaCompras" onclick={finalizaCompra} alt="Finalizar Compras" placeholder="Finaliza Compras" icon={CarrinhoCompras} />}
       </div>
       </body>
       <footer className="footer"> </footer>  

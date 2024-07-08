@@ -11,7 +11,7 @@ import { CestaContexto } from "../context/CestaContexto";
 export default function Item(props) {
     const [quantity, SetQuantity] = useState(1);
     const [values, SetValues] = useState(true);
-    const { addItemToCesta  } = useContext(CestaContexto); 
+    const { addItemToCesta, removeItemFromCesta  } = useContext(CestaContexto); 
     const { produtos: product,BotoesFinais = true, FinalizacaoCompra = true } = props;   
     const navigate = useNavigate();
 
@@ -26,12 +26,6 @@ export default function Item(props) {
       SetQuantity(quantity + 1)
   }
     
-    // const buyProduct = () => {
-    //     if (window.confirm(`Preço final: ${Math.round((product.price * quantity) * 100) / 100}`)) {
-    //         alert('Produto comprado com sucesso!')
-    //         SetQuantity(1)
-    //     }
-    // }
     const addCesta = () => {
         const item = {...product, quantity}
         addItemToCesta (item);
@@ -68,7 +62,7 @@ export default function Item(props) {
                     <img src={require(`../assets/imagens/${product.image}`)} className="imageProduto" alt="imageProduto" />
                 )}
           <div className="content">
-            <p className="name-product">{product.title}</p>
+            <p className="name-product">{product.title} </p>
             <h3 className="price-product">
                 R$ <span>{product.price.toFixed(2)}</span>
             </h3>
@@ -87,7 +81,7 @@ export default function Item(props) {
           )}
           { FinalizacaoCompra && (
             <div className="finalizaCompra">
-              <img className="IconLixeira" src={IconLixeira} alt="IconLixeira"></img>
+              <button className={'IconLixeira'} onClick={()=>removeItemFromCesta(product.id)} alt="IconLixeira"><img src={IconLixeira} className="IconLixeira" alt="Excluir Produto"/></button>
               R$ <span>{(product.price*product.quantity).toFixed(2)}</span>
 
             </div>
