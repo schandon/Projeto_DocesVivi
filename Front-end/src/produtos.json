@@ -20,7 +20,7 @@
             "id": 3,
             "title": "Biscoitos Amantegas com gostas de Chocolate (40 unid.)",
             "price": 100.00,
-            "tipo": "Entrada Doce",
+            "tipo": "EntradaDoce",
             "image": "entradaDoce.jpg",
             "favorite": true
         },
@@ -36,7 +36,7 @@
             "id": 5,
             "title": "Bolinho de Bacalhau (20 unid.)",
             "price": 70.00,
-            "tipo": "Entradas Salgada",
+            "tipo": "EntradasSalgada",
            "image": "entradaSalgada.jpg",
            "favorite": false
         },
@@ -44,9 +44,25 @@
             "id": 6,
             "title": "Bolinho de Bacalhau (40 unid.)",
             "price": 135.00,
-            "tipo": "Entradas Salgada",
+            "tipo": "EntradasSalgada",
             "image": "entradaSalgada.jpg",
             "favorite": true
+        },
+        {
+            "id": 5,
+            "title": "Café da Manha",
+            "price": 30.00,
+            "tipo": "CafeManha",
+            "image": "sorveteFrutas.jpg",
+            "favorite": true
+        },
+        {
+            "id": 6,
+            "title": "Café da Manha p/ 2 pessoas",
+            "price": 55.00,
+            "tipo": "CafeManha",
+            "image": "sorveteFrutas.jpg",
+            "favorite": false
         }
 
     ]

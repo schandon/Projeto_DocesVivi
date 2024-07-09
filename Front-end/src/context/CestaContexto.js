@@ -5,6 +5,7 @@ export const CestaContexto = createContext();
 export const CestaProvider = ({ children }) => {
   const [itensCesta, setItensCesta] = useState([]);
   const [cesta, setCesta] = useState([]);
+  const [tipo, setTipo] = useState(null);
 
   const addItemToCesta = (item) => {
     setItensCesta((prevItems) => [...prevItems, item]);
@@ -14,6 +15,14 @@ export const CestaProvider = ({ children }) => {
     console.log(itemId);
   };
 
+  const trocaTipo = (string) => {
+    setTipo(string);
+    console.log(tipo);
+  }
+  
+  const mostraTipo = () =>{
+    setTipo(tipo);
+  }
   const limparCesta = () =>{
     setItensCesta([]);
   }
@@ -24,8 +33,11 @@ export const CestaProvider = ({ children }) => {
     ));
   };
 
+  // const updateTipoLista = (pruductTipo) =>{
+  //   setCesta
+  // }
   return (
-    <CestaContexto.Provider value={{ itensCesta, addItemToCesta, updateItemQuantity, removeItemFromCesta, limparCesta }}>
+    <CestaContexto.Provider value={{ itensCesta, addItemToCesta, updateItemQuantity, removeItemFromCesta, limparCesta, trocaTipo, mostraTipo }}>
       {children}
     </CestaContexto.Provider>
   );

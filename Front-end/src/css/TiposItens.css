@@ -45,9 +45,17 @@
   cursor: pointer;
 }
 
-.Doce img {
+.Doce img  {
   max-width: 75px;
   height: auto;
+}
+.botaoTipoDoce_{
+  /* width: 75px;
+  height: 75px; */
+  img .iconButton {
+    width: 75px;
+  height: 75px;
+  }
 }
 
 .Doce span {

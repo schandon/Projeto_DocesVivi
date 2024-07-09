@@ -6,6 +6,8 @@ import iconFavoritos from "../assets/icons/ICON-FAVORITO.svg"
 import iconCesta from "../assets/icons/ICON-CESTA.svg"
 import iconLocalizacao from "../assets/icons/ICON-LOCALIZACAO.svg"
 import HomePage from "../pages/HomePage.js"
+import Swal from "sweetalert2";
+
 
 export default function Navebar(){
   const navigate = useNavigate();
@@ -16,6 +18,16 @@ export default function Navebar(){
   const goToCesta = () => {
     navigate("/cestaprodutos");
   }
+
+  const aindaNaoDesenvolvido = () => {
+    Swal.fire({
+      icon: "warning",
+      title: "Ainda não desenvolvido!",
+      text: "Esta funcionalidade ainda não está disponível.",
+    });
+    navigate('/');
+  }
+
   return (
     <section className="header">
       <div className="header-content">
@@ -30,8 +42,8 @@ export default function Navebar(){
           </div>
         </div>
         <div className="icons">
-          <img src={iconUser} className="IconUser" alt='user' />
-          <img src={iconFavoritos} className="IconFavoritos" alt='favorito' />
+          <img src={iconUser} className="IconUser" alt='user'onClick={aindaNaoDesenvolvido} />
+          <img src={iconFavoritos} className="IconFavoritos" onClick={aindaNaoDesenvolvido} alt='favorito' />
           <img src={iconCesta} className="IconCesta" onClick={goToCesta} alt='cestaCompras' />
       </div>
       </div>
