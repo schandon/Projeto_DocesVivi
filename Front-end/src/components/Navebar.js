@@ -28,6 +28,9 @@ export default function Navebar(){
     navigate('/');
   }
 
+
+
+
   return (
     <section className="header">
       <div className="header-content">

@@ -33,9 +33,6 @@ export const CestaProvider = ({ children }) => {
     ));
   };
 
-  // const updateTipoLista = (pruductTipo) =>{
-  //   setCesta
-  // }
   return (
     <CestaContexto.Provider value={{ itensCesta, addItemToCesta, updateItemQuantity, removeItemFromCesta, limparCesta, trocaTipo, mostraTipo }}>
       {children}

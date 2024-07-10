@@ -46,7 +46,7 @@ export default function Cesta(){
               <Itens key={index} produtos={item} BotoesFinais={false} finalizacaoCompra={true}/>
           ))} 
       { itensCesta.length === 0 && avisoCestaVazia()}
-      { itensCesta.length > 0 && <Button className="finalizaCompras" onclick={finalizaCompra} alt="Finalizar Compras" placeholder="Finaliza Compras" icon={CarrinhoCompras} />}
+      { itensCesta.length > 0 && <Button className="finalizaCompras" onClick={finalizaCompra} alt="Finalizar Compras" placeholder="Finaliza Compras" icon={CarrinhoCompras} />}
       </div>
       </body>
       <footer className="footer"> </footer>  

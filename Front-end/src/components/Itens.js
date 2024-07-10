@@ -81,8 +81,8 @@ export default function Item(props) {
           </div>
           { BotoesFinais && (
           <div className="final">
-            <Button className="addCesta" onclick={addCesta} placeholder='Adcionar Cesta' icon={IconBasket} />
-            <Button className="addCompra" onclick={finalizaCompra} placeholder='Comprar' />
+            <Button className="addCesta" onClick={addCesta} placeholder='Adcionar Cesta' icon={IconBasket} />
+            <Button className="addCompra" onClick={finalizaCompra} placeholder='Comprar' />
           </div>
           )}
           { FinalizacaoCompra && (
