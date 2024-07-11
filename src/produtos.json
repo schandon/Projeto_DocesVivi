@@ -10,10 +10,10 @@
         },
         {
             "id": 2,
-            "title": "Bolo de Chocolate confeitado Morangos (1 Fatia)",
-            "price": 40.00,
+            "title": "Bolo de Chocolate Doce de Leite e Castanhas",
+            "price": 350.00,
             "tipo": "Bolos",
-            "image": "bolo2.jpg",
+            "image": "bolo.jpg",
             "favorite": false
         },
         {
@@ -34,10 +34,10 @@
         },
         {
             "id": 5,
-            "title": "Bolinho de Bacalhau (20 unid.)",
-            "price": 70.00,
-            "tipo": "EntradasSalgada",
-           "image": "entradaSalgada.jpg",
+            "title": "Broune com Sorvete e Chantili ",
+            "price": 40.00,
+            "tipo": "Sobremesa",
+           "image": "brouneSorvete.jpg",
            "favorite": false
         },
         {
@@ -49,19 +49,26 @@
             "favorite": true
         },
         {
-            "id": 5,
-            "title": "Café da Manha",
-            "price": 30.00,
-            "tipo": "CafeManha",
-            "image": "sorveteFrutas.jpg",
+            "id": 7,
+            "title": "Kit Sobremesa",
+            "price": 90.00,
+            "tipo": "Sobremesa",
+            "image": "Kitsobremesa02.jpg",
             "favorite": true
         },
         {
-            "id": 6,
+            "id": 8,
             "title": "Café da Manha p/ 2 pessoas",
             "price": 55.00,
             "tipo": "CafeManha",
-            "image": "sorveteFrutas.jpg",
+            "image": "cafemanha2.jpg",
+            "favorite": false
+        }, {
+            "id": 9,
+            "title": "Café da Manha Individual",
+            "price": 20.00,
+            "tipo": "CafeManha",
+            "image": "cafemanha.jpg",
             "favorite": false
         }
 
