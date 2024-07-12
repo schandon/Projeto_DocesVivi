@@ -25,7 +25,7 @@ const BannerCarousel = () => {
                 <a href="https://github.com/schandon/Projeto_DocesVivi" rel="noreferrer" target='_blank'>
                     <img src={banner01} alt="Repositório" />
                 </a>
-                <a href="https://www.youtube.com/watch?v=lJl7f1Gc1ms" target='_blank' rel="noreferrer">
+                <a href="https://youtu.be/M5JVXzHmLr8" target='_blank' rel="noreferrer">
                     <img src={banner02} alt="Youtube" />
                 </a>
                 <a href="https://www.figma.com/design/BjL8iLsyDna76re3zEdMM5/Protoripa%C3%A7%C3%A3o---Doces-Vivi?node-id=99-214&t=41wrGHj7cblg71Vn-1"  target='_blank' rel="noreferrer">
